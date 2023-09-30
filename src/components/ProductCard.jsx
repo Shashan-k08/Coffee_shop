@@ -14,11 +14,12 @@ const ProductCard = ({ product }) => {
   return (
     <div className='row'>
       <div className="col-sm">
-        <div class="card" style={{ width: "18rem" }}>
+        <div class="card" style={{ width: "15rem" ,marginLeft:"70px" ,borderRadius:"30px",border:"none" }}>
           <img class="card-img-top" src={product.image} alt="Card image cap" />
           <div class="card-body">
             <h2>{product.name}</h2>
-            <p>Price: ${product.price.toFixed(2)}</p>
+            <h6>{product.bakery}</h6>
+            <p> ${product.price.toFixed(2)}</p>
           </div>
         </div>
       </div>

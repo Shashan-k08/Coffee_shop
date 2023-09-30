@@ -1,7 +1,5 @@
 // Sidebar.js
 import React ,{useState}from 'react';
-import SearchBar from './SearchBar';
-import SortingOptions from './SortingOptions';
 import '../App.css'; // Import the CSS file for styling
 import searchicon from '../img/Vector-removebg-preview.png';
 const Sidebar = ({ onSearch, onSort }) => {
@@ -22,26 +20,32 @@ const Sidebar = ({ onSearch, onSort }) => {
      <img src={searchicon} alt=''/>
     </div>
     <div className="sorting-options">
+    <h5>Categories</h5>
       <div className="sort">
-      <h5>Categories</h5>
-      <label>
+     
+      <label className='txt'>
         <input type="checkbox" />
-        My Value
+        &nbsp; Baked Goods(8)
       </label>
-      <label>
+      <label className='txt'>
         <input type="checkbox" />
-        My Value
+        &nbsp; Coffee(2)
       </label>
       </div>
+      <h5>Dietary</h5>
       <div className="sort">
-      <h5>Categories</h5>
-      <label>
+      
+      <label className='txt'>
         <input type="checkbox" />
-        My Value
+        &nbsp; Eco Friendly(2)
       </label>
-      <label>
+      <label className='txt'>
         <input type="checkbox" />
-        My Value
+        &nbsp; Gluten Free(4)
+      </label>
+      <label className='txt'>
+        <input type="checkbox" />
+        &nbsp; Nut Free(7)
       </label>
       </div>
     </div>

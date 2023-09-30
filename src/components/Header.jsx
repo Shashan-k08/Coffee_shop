@@ -23,6 +23,7 @@ const Header = () => {
 
       </div>
       <div className='products-txt'> <p>Products</p> <p>Photos</p></div>
+      <hr/>
     </HeaderWrapper>
   );
 };

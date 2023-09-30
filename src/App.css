@@ -1,13 +1,10 @@
-/* src/App.css */
 
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header styles */
 header {
   /* background-color: #333;
   color: white;
@@ -30,15 +27,20 @@ header {
 }
 
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.card h6{
+  opacity: .6;
+  font-size: 10px;
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 15px;
+  opacity: .9;
 }
 
-/* SearchBar styles */
 .input-container {
   margin-bottom: 1rem;
 }
@@ -54,7 +56,6 @@ input[type="text"] {
   font-size: 1rem;
 }
 
-/* SortingOptions styles */
 .select-container {
   margin-bottom: 1rem;
 }
@@ -66,14 +67,14 @@ label {
 
 select {
   padding: 0.5rem;
-  border: 1px solid #ddd;
+  border: 1px none #ddd;
   border-radius: 4px;
   font-size: 1rem;
 }
 
 .header-icon {
   display: flex;
-  margin: 4rem;
+  margin: 3rem;
   flex-direction: row;
   align-items: center;
 }
@@ -138,20 +139,27 @@ select {
 
 }
 
-.sorting-options label {
-
+.sorting-options h5 {
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .sorting-options {
  color: black;
  display: flex;
+ align-items: center;
  flex-direction: column;
 }
 .sort{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.sort label{
+  margin: 1px;
+}
+.txt{
+  opacity: .8;
 }
 
 .product-list {
@@ -161,7 +169,7 @@ select {
 .search-bar img {
   position: relative;
   left: -72%;
-  top: 11%;
+  top: 4%;
   height: 17px;
 }
 
