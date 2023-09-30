@@ -9,10 +9,15 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
+  /* background-color: #333;
   color: white;
   padding: 1rem;
-  text-align: center;
+  text-align: center; */
+}
+
+.head-img {
+  height: 132px;
+  width: 100%;
 }
 
 /* ProductCard styles */
@@ -40,9 +45,12 @@ header {
 
 input[type="text"] {
   padding: 0.5rem;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  margin-left: 17px;
+  margin-bottom: 10px;
+  width: 11%;
+  border: 1px none #f6f0f0;
+  border-radius: 12px;
+  background: #e2dfdf8f;
   font-size: 1rem;
 }
 
@@ -61,4 +69,107 @@ select {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+}
+
+.header-icon {
+  display: flex;
+  margin: 4rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-img {
+  height: 108px;
+  margin-right: 51px;
+  width: 108px;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.icon-text h4 {
+  margin: 0px;
+}
+
+.icon-text p {
+  opacity: .8;
+  font-size: 11px;
+  font-family: system-ui;
+}
+
+.products-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Sidebar.css */
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 59%;
+  height: 66%;
+  /* margin: 0%; */
+  width: 250px;
+
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar input {
+
+  padding: 0.5rem;
+  margin-left: 19px;
+  margin-bottom: 10px;
+  padding-left: 65px;
+  height: 41px;
+  width: 80%;
+  border: 1px none #f6f0f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #F5F5F5;
+
+}
+
+.sorting-options label {
+
+}
+
+.sorting-options {
+ color: black;
+ display: flex;
+ flex-direction: column;
+}
+.sort{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-list {
+  margin-left: 22%;
+}
+
+.search-bar img {
+  position: relative;
+  left: -72%;
+  top: 11%;
+  height: 17px;
+}
+
+.products-container{
+  display: flex;
+  margin-left: 23%;
+  margin-right: 2%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }

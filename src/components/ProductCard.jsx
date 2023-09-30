@@ -12,10 +12,17 @@ border-radius: 4px;
 
 const ProductCard = ({ product }) => {
   return (
-    <Card>
-      <h2>{product.name}</h2>
-      <p>Price: ${product.price.toFixed(2)}</p>
-    </Card>
+    <div className='row'>
+      <div className="col-sm">
+        <div class="card" style={{ width: "18rem" }}>
+          <img class="card-img-top" src={product.image} alt="Card image cap" />
+          <div class="card-body">
+            <h2>{product.name}</h2>
+            <p>Price: ${product.price.toFixed(2)}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

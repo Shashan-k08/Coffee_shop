@@ -5,6 +5,7 @@ import ProductList from './components/ProductList';
 import SearchBar from './components/SearchBar';
 import SortingOptions from './components/SortingOptions';
 import mockData from './data';
+import Sidebar from './components/Sidebar';
 
 function App() {
   const [products, setProducts] = useState(mockData);
@@ -27,7 +28,8 @@ function App() {
   return (
     <div>
       <Header />
-      <SearchBar onSearch={(term) => setSearchTerm(term)} />
+      {/* <SearchBar onSearch={(term) => setSearchTerm(term)} /> */}
+      <Sidebar/>
       <SortingOptions onSort={(value) => setSortBy(value)} />
       <ProductList products={sortedProducts} />
     </div>

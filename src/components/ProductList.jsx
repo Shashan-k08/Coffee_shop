@@ -4,10 +4,12 @@ import ProductCard from './ProductCard';
 
 function ProductList({ products }) {
   return (
-    <div>
+    <div className='product-list container'>
+      <div className="row">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
+      </div>
     </div>
   );
 }
